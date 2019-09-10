@@ -1,0 +1,13 @@
+<h1 style="text-align: center">Register Page</h1>
+<div>
+    <form [formGroup]="page1">
+    <label>Username</label><br>
+    <input type="text"  placeholder="enter username" formControlName = "username"><br><br>
+    <label>Password</label><br>
+    <input type="password"  placeholder="enter password" formControlName = "password"><br><br>
+    <label>Confirm Password</label><br>
+    <input type="password"  placeholder="enter password" formControlName = "confirm"><br><br>
+    <button type="submit" (click)="open(page1.value)">SUBMIT</button>
+    <p>already have an account?<u (click) = "click()">Login</u></p>
+</form>
+</div>

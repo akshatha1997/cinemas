@@ -1,0 +1,12 @@
+<body>
+    <form [formGroup]="PAGE3">
+        MoviesName:<br>
+        <input type="text" placeholder=" enter movies name" formControlName="MovieName"><br><br>
+        Language:<br>
+        <input type="text" placeholder="enter your language" formControlName="Language"><br><br>
+        Genre:<br>
+        <input type="text" placeholder="enter genre" formControlName="Genre"><br><br>
+        <button (click)="addmovies(PAGE3.value)">Save</button>
+        <button (click)="cancel()">Cancel</button>
+    </form>
+</body>
